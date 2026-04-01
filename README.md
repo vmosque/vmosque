@@ -17,7 +17,9 @@ Building scalable web applications with React, TypeScript, Node.js, and Tailwind
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" height="150"/>
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" height="150"/>
+  
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" height="150"/>
 </p>
 
 ---
