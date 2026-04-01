@@ -1,60 +1,30 @@
-# 👋 Hi, I'm Victor Mosqueda
+# 👋 Victor Mosqueda
 
 ### 💻 Full Stack Developer (MERN)
 
-Building scalable web applications with **React, TypeScript, Node.js, and Tailwind CSS**
+Building scalable web applications with React, TypeScript, Node.js, and Tailwind CSS
 
 ---
 
-## 🚀 Featured Projects
+## 🧰 Tech Stack
 
-### 🧠 Nearbite  
-Community platform to share home-cooked meals  
-
-![React](https://img.shields.io/badge/-React-0A0A0A?logo=react)
-![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
-![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?logo=mongodb)
-
-👉 [View Project](#)
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,nodejs,express,mongodb,git,github" />
+</p>
 
 ---
 
-### 🛒 MERN E-commerce  
+## 📊 Stats
 
-![React](https://img.shields.io/badge/-React-0A0A0A?logo=react)
-![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
-![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?logo=mongodb)
-
-👉 [View Project](#)
-
----
-
-### 🏠 Apartment Rentals  
-
-![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
-
-👉 [View Project](#)
-
----
-
-## 🛠 Tech Stack
-
-![React](https://img.shields.io/badge/-React-0A0A0A?logo=react)
-![TypeScript](https://img.shields.io/badge/-TypeScript-0A0A0A?logo=typescript)
-![Tailwind](https://img.shields.io/badge/-TailwindCSS-0A0A0A?logo=tailwind-css)
-![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
-![Express](https://img.shields.io/badge/-Express-0A0A0A?logo=express)
-![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?logo=mongodb)
-
----
-
-## 📊 GitHub Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=dark)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" height="150"/>
+</p>
 
 ---
 
 ## 📫 Contact
 
-- 💼 LinkedIn: (tu link)
-- 📧 Email: vdmc1804@gmail.com
+<p align="center">
+  💼 <a href="TU_LINKEDIN">LinkedIn</a> • 
+  📧 vdmc1804@gmail.com
+</p>
