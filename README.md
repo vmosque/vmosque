@@ -18,28 +18,8 @@ I am currently strengthening my skills through hands-on projects, with a strong 
 
 ---
 
-### 📊 Statistics
-
-</p>
-
-<p>
-<img
-  align="left" 
-  alt="GitHub Stats" 
-  height="200" 
-  src="./github-stats/github-stats.svg"
-/>
-&nbsp;&nbsp;
-<img
-  align="left" 
-  alt="Top Languages" 
-  height="200" 
-  src="./github-stats/top-langs.svg"
-/>
-</p>
-
 
 ## 📫 Contact
 
-- LinkedIn: TU_LINKEDIN  
+- LinkedIn: https://www.linkedin.com/in/vicmosqueda
 - Email: vdmc1804@gmail.com
