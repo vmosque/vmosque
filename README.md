@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Victor Mosqueda
 
-### Full Stack Developer (MERN)
+### 💻 Full Stack Developer (MERN)
 
 Building scalable web applications with **React, TypeScript, Node.js, and Tailwind CSS**
 
@@ -10,45 +10,51 @@ Building scalable web applications with **React, TypeScript, Node.js, and Tailwi
 
 ### 🧠 Nearbite  
 Community platform to share home-cooked meals  
-🔹 React + Node.js + MongoDB  
-🔹 Authentication & REST API  
+
+![React](https://img.shields.io/badge/-React-0A0A0A?logo=react)
+![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
+![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?logo=mongodb)
+
 👉 [View Project](#)
 
 ---
 
 ### 🛒 MERN E-commerce  
-Full-stack e-commerce with admin panel  
-🔹 Cart, orders, authentication  
-🔹 Clean architecture  
+
+![React](https://img.shields.io/badge/-React-0A0A0A?logo=react)
+![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
+![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?logo=mongodb)
+
 👉 [View Project](#)
 
 ---
 
 ### 🏠 Apartment Rentals  
-Admin dashboard for rental management  
-🔹 CRUD operations  
-🔹 API integration  
+
+![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
+
 👉 [View Project](#)
 
 ---
 
 ## 🛠 Tech Stack
 
-### Frontend
-![React](https://img.shields.io/badge/-React-000?&logo=react)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000?&logo=typescript)
-![Tailwind](https://img.shields.io/badge/-TailwindCSS-000?&logo=tailwind-css)
+![React](https://img.shields.io/badge/-React-0A0A0A?logo=react)
+![TypeScript](https://img.shields.io/badge/-TypeScript-0A0A0A?logo=typescript)
+![Tailwind](https://img.shields.io/badge/-TailwindCSS-0A0A0A?logo=tailwind-css)
+![Node.js](https://img.shields.io/badge/-Node.js-0A0A0A?logo=node.js)
+![Express](https://img.shields.io/badge/-Express-0A0A0A?logo=express)
+![MongoDB](https://img.shields.io/badge/-MongoDB-0A0A0A?logo=mongodb)
 
-### Backend
-![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
-![Express](https://img.shields.io/badge/-Express-000?&logo=express)
+---
 
-### Database
-![MongoDB](https://img.shields.io/badge/-MongoDB-000?&logo=mongodb)
+## 📊 GitHub Stats
+
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=dark)
 
 ---
 
 ## 📫 Contact
 
-- LinkedIn: (tu link)
-- Email: vdmc1804@gmail.com
+- 💼 LinkedIn: (tu link)
+- 📧 Email: vdmc1804@gmail.com
