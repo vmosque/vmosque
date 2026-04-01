@@ -20,11 +20,9 @@ I am currently strengthening my skills through hands-on projects, with a strong 
 
 ## 📊 Statistics
 
-</p>
-
 <p align="center">
-  <img src="./github-stats/github-stats.svg" height="170"/>
-  <img src="./github-stats/top-langs.svg" height="170"/>
+  <img src="https://raw.githubusercontent.com/vmosque/vmosque/main/github-stats/github-stats.svg" height="170"/>
+  <img src="https://raw.githubusercontent.com/vmosque/vmosque/main/github-stats/top-langs.svg" height="170"/>
 </p>
 
 ## 📫 Contact
