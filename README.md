@@ -1,12 +1,16 @@
 # 👋 Victor Mosqueda
 
-### 💻 Full Stack Developer (MERN)
+### Full Stack Developer
 
-Building scalable web applications with React, TypeScript, Node.js, and Tailwind CSS
+My name is Victor Mosqueda, and I am focused on building modern web applications using JavaScript, React, and Node.js.
+
+I have experience developing full-stack applications with technologies such as TypeScript, Express, and MongoDB, working with REST APIs, authentication, and scalable architectures.
+
+I am currently strengthening my skills through hands-on projects, with a strong focus on writing clean, maintainable code and building real-world solutions.
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Languages and Technologies
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,tailwind,nodejs,express,mongodb,git,github" />
@@ -14,19 +18,27 @@ Building scalable web applications with React, TypeScript, Node.js, and Tailwind
 
 ---
 
-## 📊 Stats
+## 📊 Statistics
 
-<p align="center">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" height="150"/>
-  
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" height="150"/>
 </p>
 
----
+<p>
+<img
+  align="left" 
+  alt="GitHub Stats" 
+  height="200" 
+  src="./github-stats/github-stats.svg"
+/>
+&nbsp;&nbsp;
+<img
+  align="left" 
+  alt="Top Languages" 
+  height="200" 
+  src="./github-stats/top-langs.svg"
+/>
+</p>
 
 ## 📫 Contact
 
-<p align="center">
-  💼 <a href="TU_LINKEDIN">LinkedIn</a> • 
-  📧 vdmc1804@gmail.com
-</p>
+- LinkedIn: TU_LINKEDIN  
+- Email: vdmc1804@gmail.com
