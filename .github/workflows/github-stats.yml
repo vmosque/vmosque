@@ -19,8 +19,8 @@ jobs:
       - name: Generate Stats SVG
         run: |
           mkdir -p github-stats
-          curl -o github-stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight"
-          curl -o github-stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight"
+          curl -L -o github-stats/github-stats.svg "https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight"
+          curl -L -o github-stats/top-langs.svg "https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight"
 
       - name: Commit and push
         run: |
