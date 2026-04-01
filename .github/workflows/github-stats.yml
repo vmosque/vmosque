@@ -16,11 +16,25 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate Stats SVG
+      - name: Generate Stats SVG safely
         run: |
           mkdir -p github-stats
-          curl -L -H "User-Agent: Mozilla/5.0" -o github-stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight&cache_seconds=1800"
-          curl -L -H "User-Agent: Mozilla/5.0" -o github-stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight&cache_seconds=1800"
+
+          RESPONSE=$(curl -L -H "User-Agent: Mozilla/5.0" "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight")
+
+          if echo "$RESPONSE" | grep -q "<svg"; then
+            echo "$RESPONSE" > github-stats/github-stats.svg
+          else
+            echo '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120"><text x="10" y="50" fill="white">Stats not available</text></svg>' > github-stats/github-stats.svg
+          fi
+
+          RESPONSE2=$(curl -L -H "User-Agent: Mozilla/5.0" "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight")
+
+          if echo "$RESPONSE2" | grep -q "<svg"; then
+            echo "$RESPONSE2" > github-stats/top-langs.svg
+          else
+            echo '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120"><text x="10" y="50" fill="white">Languages not available</text></svg>' > github-stats/top-langs.svg
+          fi
 
       - name: Commit and push
         run: |
