@@ -5,6 +5,9 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,8 +19,8 @@ jobs:
       - name: Generate Stats SVG
         run: |
           mkdir -p github-stats
-          curl "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight" > github-stats/github-stats.svg
-          curl "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight" > github-stats/top-langs.svg
+          curl -o github-stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight"
+          curl -o github-stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight"
 
       - name: Commit and push
         run: |
