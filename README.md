@@ -22,20 +22,9 @@ I am currently strengthening my skills through hands-on projects, with a strong 
 
 </p>
 
-<p>
-<img
-  align="left" 
-  alt="GitHub Stats" 
-  height="200" 
-  src="./github-stats/github-stats.svg"
-/>
-&nbsp;&nbsp;
-<img
-  align="left" 
-  alt="Top Languages" 
-  height="200" 
-  src="./github-stats/top-langs.svg"
-/>
+<p align="center">
+  <img src="./github-stats/github-stats.svg" height="170"/>
+  <img src="./github-stats/top-langs.svg" height="170"/>
 </p>
 
 ## 📫 Contact
