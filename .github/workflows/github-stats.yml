@@ -1,45 +1,56 @@
-name: Generate GitHub Stats
+name: Update README stats
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Generate Stats SVG safely
+      - name: Generate GitHub stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: 'username=pablovqueiroz&show_icons=true&theme=tokyonight'
+          path: github-stats/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: 'username=pablovqueiroz&theme=tokyonight&layout=compact&custom_title=Technologies&langs_count=8'
+          path: github-stats/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push stats
         run: |
-          mkdir -p github-stats
-
-          RESPONSE=$(curl -L -H "User-Agent: Mozilla/5.0" "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight")
-
-          if echo "$RESPONSE" | grep -q "<svg"; then
-            echo "$RESPONSE" > github-stats/github-stats.svg
-          else
-            echo '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120"><text x="10" y="50" fill="white">Stats not available</text></svg>' > github-stats/github-stats.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      
+          git stash push --include-untracked -m "github-actions-temp-stash" || true
+          git pull --rebase origin main
+      
+          if git stash list | grep -q "github-actions-temp-stash"; then
+            git stash pop || true
           fi
-
-          RESPONSE2=$(curl -L -H "User-Agent: Mozilla/5.0" "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight")
-
-          if echo "$RESPONSE2" | grep -q "<svg"; then
-            echo "$RESPONSE2" > github-stats/top-langs.svg
-          else
-            echo '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120"><text x="10" y="50" fill="white">Languages not available</text></svg>' > github-stats/top-langs.svg
-          fi
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add github-stats/*
-          git commit -m "update stats" || echo "No changes"
-          git push
+      
+          git add github-stats/
+          git diff --cached --quiet && exit 0
+      
+          git commit -m "chore: update readme stats"
+          git push origin main
