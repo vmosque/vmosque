@@ -13,8 +13,16 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate GitHub Stats SVG
-        uses: anuraghazra/github-readme-stats@master
-        with:
-          username: vmosque
-          theme: tokyonight
+      - name: Generate Stats SVG
+        run: |
+          mkdir -p github-stats
+          curl "https://github-readme-stats.vercel.app/api?username=vmosque&show_icons=true&theme=tokyonight" > github-stats/github-stats.svg
+          curl "https://github-readme-stats.vercel.app/api/top-langs/?username=vmosque&layout=compact&theme=tokyonight" > github-stats/top-langs.svg
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add github-stats/*
+          git commit -m "update stats" || echo "No changes"
+          git push
